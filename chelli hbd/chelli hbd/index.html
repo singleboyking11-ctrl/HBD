@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#160d25">
+  <title>For My Chelli 💗</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main>
+    <section id="intro" class="screen active">
+      <div class="eyebrow">A LITTLE SOMETHING FOR YOU</div>
+      <h1 class="hero-title">Hey, chelli <span class="heart">♥</span><span class="dots">...</span></h1>
+      <p class="description">I made a little corner of the internet just for your birthday.</p>
+      <button id="openGift" class="primary-btn">🎁 Open Your Gift</button>
+      <div class="tiny-note">made with love, just for you</div>
+    </section>
+
+    <section id="birthday" class="screen">
+      <div class="eyebrow">TODAY IS ALL ABOUT YOU</div>
+      <h1 class="section-title">Happy Birthday,<br><span class="pink">Chelli!</span> 💗</h1>
+      <p class="description">Today is officially your day.<br>So I made this little universe around you.</p>
+      <div id="countdown" class="countdown"></div>
+      <button class="next-btn" data-next="memories">Continue ↓</button>
+    </section>
+
+    <section id="memories" class="screen">
+      <div class="eyebrow">CHAPTER 01</div>
+      <h2 class="section-title">Our Little <span class="pink">Memories</span></h2>
+      <p class="description">Some moments are too special to stay inside our gallery.</p>
+
+      <div class="memory-grid">
+        <article class="memory">
+          <div class="photo"><img src="./images/WhatsApp%20Image%202026-10-09%20at%203.14.12%20PM%20(1).jpeg" alt="Chelli smiling in a garden" loading="lazy"></div>
+          <p>Our beautiful Chelli ❤️</p>
+        </article>
+        <article class="memory">
+          <div class="photo"><img src="./images/WhatsApp%20Image%202026-10-09%20at%203.26.53%20PM.jpeg" alt="Chelli in a traditional outfit" loading="lazy"></div>
+          <p>Beautiful moments 🌸</p>
+        </article>
+        <article class="memory">
+          <div class="photo"><img src="./images/WhatsApp%20Image%202026-10-09%20at%204.22.53%20PM.jpg" alt="Chelli holding a camera" loading="lazy"></div>
+          <p>Our little photographer 📸</p>
+        </article>
+        <article class="memory">
+          <div class="photo"><img src="./images/WhatsApp%20Image%202026-10-09%20at%203.28.11%20PM.jpeg" alt="Chelli outdoors" loading="lazy"></div>
+          <p>Always keep smiling 💗</p>
+        </article>
+        <article class="memory">
+          <div class="photo"><img src="./images/WhatsApp%20Image%202026-10-09%20at%203.29.59%20PM.jpeg" alt="Chelli taking a photograph" loading="lazy"></div>
+          <p>Special memories ✨</p>
+        </article>
+        <article class="memory">
+          <div class="photo"><img src="./images/WhatsApp%20Image%202026-10-09%20at%203.32.36%20PM.jpeg" alt="Chelli in a blue outfit" loading="lazy"></div>
+          <p>Memories to keep foreve🖤</p>
+        </article>
+        <article class="memory">
+          <div class="photo"><img src="./images/WhatsApp%20Image%202026-10-09%20at%203.32.00%20PM.jpeg" alt="A sibling photograph" loading="lazy"></div>
+          <p>Sibling bond forever 🫶</p>
+        </article>
+        <article class="memory">
+          <div class="photo"><img src="./images/WhatsApp%20Image%202026-10-09%20at%205.12.35%20PM.jpeg" alt="A special memory" loading="lazy"></div>
+          <p>One for the memory book 💕</p>
+        </article>
+      </div>
+
+      <button class="next-btn" data-next="things">A little more ↓</button>
+    </section>
+
+    <section id="things" class="screen">
+      <div class="eyebrow">CHAPTER 02</div>
+      <h2 class="section-title">Things I Don't Say <span class="pink">Enough</span></h2>
+      <p class="description">But I hope you always know them.</p>
+
+     <div class="message-grid">
+
+  <article class="message-card">
+    <span>❤️</span>
+    <h3>You matter</h3>
+    <p>You are special to me.</p>
+  </article>
+
+  <article class="message-card">
+    <span>🌸</span>
+    <h3>Keep smiling</h3>
+    <p>Your smile makes every day brighter.</p>
+  </article>
+
+  <article class="message-card">
+    <span>🫶</span>
+    <h3>I'm always here</h3>
+    <p>You can always count on me.</p>
+  </article>
+
+  <article class="message-card">
+    <span>💖</span>
+    <h3>My Chelli</h3>
+    <p>You're my sister by heart, forever.</p>
+  </article>
+
+</div>
+
+      <button class="next-btn" data-next="quiz">One fun question ↓</button>
+    </section>
+
+    <section id="quiz" class="screen">
+      <div class="eyebrow">CHAPTER 03 · QUICK QUESTION</div>
+      <h2 class="section-title">Who is the <span class="pink">lucky one?</span></h2>
+      <p class="description">Who has the world's most wonderful sister?</p>
+
+      <div class="quiz-options">
+        <button class="quiz-btn" data-answer="me">Obviously me 😎</button>
+        <button class="quiz-btn" data-answer="you">Obviously you 😌</button>
+      </div>
+
+      <p id="quizResult" class="quiz-result" aria-live="polite"></p>
+      <button id="quizNext" class="next-btn hidden" data-next="letter">Read your letter 💌</button>
+    </section>
+
+    <section id="letter" class="screen">
+      <div class="eyebrow">ONE LAST THING</div>
+      <h2 class="section-title">A little letter, <span class="pink">just for you</span></h2>
+      <p class="description">Tap the envelope. There's something inside.</p>
+
+      <button id="envelope" class="envelope" aria-label="Open your birthday letter">
+        <span>💌</span>
+        <small>Tap to open</small>
+      </button>
+
+      <article id="letterContent" class="letter hidden">
+  <p>Dear Chelli, ❤️</p>
+
+  <p>Happy Birthday to my sister by heart, not by blood. 🫶
+  You may not be my sister by birth, but you're someone truly special in my life.</p>
+
+  <p>I'm lucky to have a bond like ours. No matter where life takes us,
+  you'll always have a special place in my heart.</p>
+
+  <p>Keep smiling, keep dreaming, and never forget how much you mean to me.
+  I'll always be cheering for you.</p>
+
+  <p>With lots of love,<br>
+  Your brother forever ❤️✨</p>
+</article>
+      <button id="finalButton" class="next-btn hidden" data-next="final">One final surprise ✨</button>
+    </section>
+
+    <section id="final" class="screen">
+      <div class="final-heart">💖</div>
+      <div class="eyebrow">MADE WITH ALL MY LOVE</div>
+      <h2 class="section-title">Happy Birthday,<br><span class="pink">Chelli!</span></h2>
+      <p class="description">You deserve a year full of love, laughter, courage, and beautiful memories.</p>
+      <p class="final-line">Love you always, chelli. 💗</p>
+      <button id="replay" class="primary-btn">↻ Replay your surprise</button>
+    </section>
+  </main>
+
+  <div id="confetti" class="confetti-layer" aria-hidden="true"></div>
+</body>
+</html>
